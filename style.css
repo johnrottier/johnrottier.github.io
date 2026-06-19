@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f9fafb;
+  color: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+.container {
+  text-align: center;
+  max-width: 800px;
+  padding: 3rem;
+}
+
+.profile-pic {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #111827;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+}
+
+.bio p {
+  font-size: 1.2rem;
+  color: #4b5563;
+  margin-bottom: 2.5rem;
+}
+
+footer {
+  border-top: 2px solid #d1d5db;
+  padding-top: 2.5rem;
+}
+
+.affiliations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 1.25rem;
+}
+
+.logo-uwm {
+  height: 150px;
+  width: auto;
+  opacity: 0.8;
+}
+
+.logo-milliman {
+  height: 40px;
+  width: auto;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.logo-milliman:hover {
+  opacity: 1;
+}
+
+.linkedin-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: #0a66c2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-size: 1.15rem;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.linkedin-link:hover {
+  background: #004182;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+  }
+}
